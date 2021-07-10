@@ -1,0 +1,9 @@
+##DATABASE 
+DB_HOST = localhost
+DB_USER = root
+DB_PASS = masterkey
+DB_NAME = pokemon
+DB_PORT = 3306
+DB_CONECTION = 10
+
+TOKEN = 123456789

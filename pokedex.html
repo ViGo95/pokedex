@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/pokedex.css">
+  <title>Document</title>
+</head>
+<body onload="getPokemons()">
+  <div id="welcome" class="welcome">
+
+  </div>
+
+  <section id="search" class="search">
+    <div class="search_pokemon">
+      <form action="">
+        <label for="search_input">¿Buscamos algún pokemon?</label>
+        <input id="search_input" class="search_input" type="text" placeholder="Nombre o Código">
+      </form>
+      <button onclick="searchPokemon()">Buscar</button>
+      <button onclick="cleanPokemon()">Volver</button>
+    </div>
+
+    <div class="pokeball_start_external">
+      <div class="pokeball_start">
+        <div class="pokeball_start_btn"></div>
+      </div>
+    </div>
+
+    <!-- <div id="search_types" class="search_types">
+      <h3 class="type_filter"></h3>
+
+      <div id="" class="display_container">
+        <a href="#">Tipos</a>
+        <div id="type_list" class="type_list">
+          
+        </div>
+      </div>
+    </div> -->
+  </section>
+  
+  <section id="main">
+    <div id="pokemons_container" class="pokemons_container">
+      
+    </div>
+  </section>
+
+  <script src="scripts/lib/axios.min.js"></script>
+  <script src="./scripts/pokedex.js"></script>
+</body>
+</html>
